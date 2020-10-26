@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* CREATOR GURU PRASAD R --- CMR_INSTITUTE_OF_TECHNOLOGY --- STUDENT --- OPEN_TO_WORK */
+
+#bd1
+{
+	background: url("bmipic.jpg") no-repeat;
+	max-width: 100%;
+	height: auto;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position:center center;
+	position: relative;
+}
+
+#posform
+{
+	padding-top: 400px;
+	/*height: 10px;
+	font-size: 20px;*/
+}
+
+#formdesign
+{
+	font-size: 20px;
+
+}
+
+#tablestyle
+{
+	width: 20%;
+	border-collapse: collapse;
+
+}
+
+#tablestyle th
+{
+	height: 40px;
+
+}
+
+.btn
+{
+	display: inline-block;
+	padding: 5px;
+	cursor:pointer;
+	margin: 5px;
+	border-radius:12px;
+
+}
+
+.btn:hover
+{
+	color: darkgreen;
+	background-color: lightgray;
+}
+
+.rowstyle
+{
+	height:40px;
+	text-align: center;
+	font-family: TimesNewRoman;
+}
+
+.iptbox
+{
+	height: 25px;
+	width: 90px;
+}
+
+
+
+.labell
+{
+	color: navy;
+
+}
+
+
+#pp
+{
+	font-size:18px;
+	color:white;
+}
+
+
+

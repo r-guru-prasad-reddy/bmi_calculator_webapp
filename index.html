@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bmi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+
+<! CREATOR -- GURU PRASAD R --- CMR INSTITUTE OF TECHNOLOGY --- STUDENT --- OPEN_TO_WORK --- -->
+<body id ="bd1">
+	<center>
+		
+		<div id="posform">
+			<form id="formdesign" name ="myform" action="/predict" method="POST" onsubmit="return validateForm()">
+				<table border=1 id="tablestyle">
+					<tr class="rowstyle">
+						<th colspan=2 align="center" bgcolor="LightGrey">Calculate BMI</th>
+					</tr>
+					<tr class="rowstyle">
+						<td><label class="labell">Age</label></td>
+						<td><input type="textbox" class="iptbox" name="a" placeholder="age"></input></td>
+					</tr>   
+					<tr class="rowstyle">
+						<td><label class="labell">Height</label></td>
+						<td><input type="textbox" class="iptbox"  name="h" placeholder="in cms"></input></td>
+					</tr>
+					<tr class="rowstyle">
+						<td><label class="labell">Weight</label></td>
+						<td><input type="textbox" class="iptbox" name="w" placeholder="in lbs"></input></td>
+					</tr>
+
+
+					<tr class="rowstyle">
+					<td><label class="labell">Gender</label></td>
+					<td><input type="textbox" class="iptbox" name="g" placeholder="M/F"></input></td>
+					</tr>
+
+					<tr class="rowstyle">
+						<th colspan=2 align="center"><input type="submit" value="Predict!!" class="btn"></input></th>
+					</tr>
+			    </table>
+				
+				
+
+			</form>
+			
+		</div>
+		<b><h2 style="color: white; padding:10px;">{{pred}}</h2></b>
+	</center>
+	<script>
+		function validateForm()
+		{
+			var x = document.forms["myform"]["a"].value;
+			var y = document.forms["myform"]["h"].value;
+			var z = document.forms["myform"]["w"].value;
+			var k = document.forms["myform"]["g"].value;
+			
+			
+			if(x=="" || y=="" || z=="" || k=="")
+			{
+				alert("Please fill all the fields");
+				return false;
+			}
+			//if( !(x.isInteger()) && !(y.isInteger()) && !(z.isInteger()))
+			//{
+				//alert("Please ensure that Age, Height, Weight are numbers and Gender is either M/F");
+			//	var both=1;
+			//}
+			
+		/*	if(single ==1 && both == 1)
+			{
+				alert("Please ensure that Age, Height, Weight are numbers and Gender is either M/F");
+				return false;
+			
+			}  */
+		/*if (isNan(x) && isNan(y) && isNaN(z))
+		{
+			alert("Please ensure that Age, Height, Weight are numbers and Gender is either M/F");
+			return false;
+		} */
+		}
+	</script>	
+</body>
+
+</html>
